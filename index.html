@@ -1,132 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Nexora Creatives — We Build Brands That People Remember</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Nexora Creatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <img src="assets/logo.png" alt="Nexora Creatives" class="logo">
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#work">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="cta">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- NAVBAR -->
+  <header class="header glass">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <img src="assets/PNG-LOGO-BLACK.jpg" alt="Nexora Creatives logo">
+      </a>
+      <nav class="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-left">
-      <h1>We Build Brands That People Remember</h1>
-      <p class="lead">Creative marketing, visual storytelling, and growth for NGOs & small businesses.</p>
-      <div class="cta-row">
-        <a class="btn-primary" href="#contact">Start Free 1‑Month Trial</a>
-        <a class="btn-secondary" href="assets/NexoraCreatives_Company_Profile.pdf" target="_blank">Download Profile</a>
+  <!-- HERO -->
+  <section id="home" class="section hero">
+    <div class="container hero-grid">
+      <div class="hero-text fade-up">
+        <p class="eyebrow">NEXORA CREATIVES</p>
+        <h1>We Build Brands<br>That People Remember</h1>
+        <p class="lead">
+          Creative marketing, visual storytelling, and growth for NGOs &amp; small businesses.
+        </p>
+        <div class="cta-row">
+          <a href="#contact" class="btn primary">Book a Strategy Call</a>
+          <a href="#portfolio" class="btn ghost">View Portfolio</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-right">
+        <div class="blob-bg">
+          <img src="assets/Background-Element-4.jpg" alt="" class="blob-img">
+        </div>
+        <img src="assets/first-page-element.jpg" alt="Nexora Creatives marketing illustration" class="hero-illus">
       </div>
     </div>
-    <div class="hero-right">
-      <!-- colorful illustration simulated with layered gradients and shapes -->
-      <div class="illus">
-        <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet" class="illus-svg">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1">
-              <stop offset="0%" stop-color="#1E88E5"/>
-              <stop offset="50%" stop-color="#43A047"/>
-              <stop offset="100%" stop-color="#E53935"/>
-            </linearGradient>
-          </defs>
-          <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)" rx="18"></rect>
-          <g opacity="0.12" fill="white">
-            <circle cx="80" cy="60" r="60"></circle>
-            <circle cx="220" cy="120" r="110"></circle>
-            <circle cx="420" cy="40" r="40"></circle>
-          </g>
-        </svg>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-head fade-up">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Nexora Creatives Work</h2>
+        <p class="lead small">
+          Placeholder gallery — replace these tiles later with real Nexora Creatives case studies.
+        </p>
+      </div>
+      <div class="grid-4 portfolio-grid">
+        <article class="card fade-up">
+          <div class="card-image placeholder"></div>
+          <h3>NGO Awareness Launch</h3>
+          <p>Social media launch campaign for a growing NGO (placeholder).</p>
+        </article>
+        <article class="card fade-up">
+          <div class="card-image placeholder"></div>
+          <h3>Local Brand Refresh</h3>
+          <p>Visual rebrand and content system for a small business (placeholder).</p>
+        </article>
+        <article class="card fade-up">
+          <div class="card-image placeholder"></div>
+          <h3>Lead Gen Funnel</h3>
+          <p>Performance ads + funnel to collect high-intent leads (placeholder).</p>
+        </article>
+        <article class="card fade-up">
+          <div class="card-image placeholder"></div>
+          <h3>Donation Landing Page</h3>
+          <p>Conversion-focused page for a fundraising drive (placeholder).</p>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="services" class="section">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Social Media Management</h3>
-        <p>Monthly content, reels, audience growth and community engagement to build a loyal following.</p>
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head fade-up">
+        <p class="eyebrow">Our Services</p>
+        <h2>What Nexora Creatives Does</h2>
       </div>
-      <div class="card">
-        <h3>Branding & Graphics</h3>
-        <p>Logo, brand kit, campaign creatives, and print-ready collateral with a consistent visual language.</p>
-      </div>
-      <div class="card">
-        <h3>Website Development</h3>
-        <p>Fast, responsive websites — WordPress or static HTML optimized for conversions and speed.</p>
-      </div>
-      <div class="card">
-        <h3>Lead Generation</h3>
-        <p>Targeted ads and funnels to attract quality leads and convert them into clients or donors.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="work" class="section alt">
-  <div class="container">
-    <h2>Portfolio (Preview)</h2>
-    <p>Placeholder gallery — replace these images with your real project screenshots.</p>
-    <div class="gallery">
-      <div class="gcard">Project 1</div>
-      <div class="gcard">Project 2</div>
-      <div class="gcard">Project 3</div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Nexora Creatives</h2>
-    <p>Nexora Creatives is a Mumbai-based digital marketing studio helping NGOs and small businesses create impact online.
-    We focus on data-backed strategies, creative storytelling, and measurable growth.</p>
-  </div>
-</section>
-
-<section id="contact" class="section contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="contact-grid">
-      <div>
-        <p><strong>Phone:</strong> +91 7058872245</p>
-        <p><strong>Email:</strong> <a href="mailto:work.nexoracreatives@gmail.com">work.nexoracreatives@gmail.com</a></p>
-        <p><strong>Location:</strong> Mumbai, MH, India</p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com/nexoracreatives" target="_blank">@nexoracreatives</a></p>
-      </div>
-      <div class="qr-wrap">
-        <p>Scan to open Instagram</p>
-        <img src="assets/insta_qr.png" alt="Instagram QR" class="qr">
+      <div class="grid-4">
+        <article class="card service-card fade-up">
+          <img src="assets/Social-Media-Management.jpg" alt="Social Media Management icon" class="service-icon">
+          <h3>Social Media Management</h3>
+          <p>Monthly content, reels, and audience growth to build a loyal community.</p>
+        </article>
+        <article class="card service-card fade-up">
+          <img src="assets/Branding-Graphics.jpg" alt="Branding & Graphics icon" class="service-icon">
+          <h3>Branding &amp; Graphics</h3>
+          <p>Logo, brand kit, and campaign creatives with a consistent visual language.</p>
+        </article>
+        <article class="card service-card fade-up">
+          <img src="assets/Website-Development.jpg" alt="Website Development icon" class="service-icon">
+          <h3>Website Development</h3>
+          <p>Fast, responsive websites — WordPress or static HTML, built for conversions.</p>
+        </article>
+        <article class="card service-card fade-up">
+          <img src="assets/Lead-Generation.jpg" alt="Lead Generation icon" class="service-icon">
+          <h3>Lead Generation</h3>
+          <p>Targeted ads and funnels that turn attention into clients or donors.</p>
+        </article>
       </div>
     </div>
-    <p class="small">Or use the form on your deployed site (Netlify Forms / Formspree can be added later).</p>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="foot-left">
-      <img src="assets/logo.png" alt="logo small" class="logo-small">
-      <p>© Nexora Creatives — nexoracreatives.in</p>
-    </div>
-    <div class="foot-right">
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</footer>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-text fade-left">
+        <p class="eyebrow">About Nexora Creatives</p>
+        <h2>Built For Brands That Want Results</h2>
+        <p>
+          Nexora Creatives is a results-driven social media marketing studio helping
+          NGOs and small businesses grow in the digital world with clarity, creativity, and consistency.
+        </p>
+        <p>
+          Founded by Parth Desai, with 6+ years of industry experience, Nexora Creatives blends deep marketing strategy
+          with high-quality content and performance-oriented execution.
+        </p>
+        <p>
+          Every Nexora Creatives project is handled with a personalised approach—understanding the brand, studying the
+          audience, and crafting campaigns that actually work.
+        </p>
+      </div>
 
+      <div class="about-visual fade-right">
+        <img src="assets/Background-Element-3.jpg" alt="" class="about-blob">
+        <img src="assets/Background-Element-6.jpg" alt="" class="about-blob about-blob-front">
+
+        <div class="about-card glass-box">
+          <p class="about-label">Nexora Creatives in numbers</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="value">6+</span>
+              <span class="hint">Years experience</span>
+            </div>
+            <div class="stat">
+              <span class="value">20+</span>
+              <span class="hint">Brands served</span>
+            </div>
+            <div class="stat">
+              <span class="value">10+</span>
+              <span class="hint">Industries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div class="contact-text fade-up">
+        <p class="eyebrow">Contact</p>
+        <h2>Work With Nexora Creatives</h2>
+        <p>Ready to grow your NGO or small business online? Reach out to Nexora Creatives today.</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> +91 7058872245</li>
+          <li><strong>Email:</strong> work.nexoracreatives@gmail.com</li>
+          <li><strong>Location:</strong> Thane – Mumbai, Maharashtra, India</li>
+          <li><strong>Instagram:</strong> @nexoracreatives</li>
+        </ul>
+      </div>
+      <form class="contact-form fade-up">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" rows="4" placeholder="Tell Nexora Creatives about your brand and goals"></textarea>
+        </div>
+        <button type="submit" class="btn primary full">Send Message</button>
+        <p class="form-note">Static form for now – connect later with Netlify Forms or Formspree.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Nexora Creatives. All rights reserved.</span>
+      <span>Nexora Creatives – strategy, design &amp; content for impact.</span>
+    </div>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // active nav on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') === '#' + entry.target.id
+            );
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(section => observer.observe(section));
+
+    // scroll animations
+    const animated = document.querySelectorAll('.fade-up, .fade-right, .fade-left');
+
+    const animObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animated.forEach(el => animObserver.observe(el));
+  </script>
 </body>
 </html>
+
