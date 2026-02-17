@@ -1,16 +1,14 @@
-const reveals = document.querySelectorAll(".reveal");
+const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll",()=>{
 
-reveals.forEach(el=>{
+sections.forEach(sec=>{
+const top = sec.getBoundingClientRect().top;
 
-const top = el.getBoundingClientRect().top;
-const windowHeight = window.innerHeight;
-
-if(top < windowHeight - 100){
-el.classList.add("active");
+if(top < window.innerHeight - 100){
+sec.style.opacity = 1;
+sec.style.transform = "translateY(0)";
 }
-
 });
 
 });
