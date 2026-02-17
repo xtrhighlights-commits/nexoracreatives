@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Nexora Creatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- POPPINS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 <header class="nav">
-  <div class="logo">
-    <img src="assets/logo.png">
-    <span>NEXORA CREATIVES</span>
+  <div class="nav-inner">
+
+    <div class="logo-wrap">
+      <img src="assets/logo.png" class="logo">
+      <span>NEXORA CREATIVES</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="https://api.whatsapp.com/send?phone=917058872245" class="cta">Get Free Audit</a>
+
   </div>
-
-  <nav>
-    <a class="active" href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <a href="https://api.whatsapp.com/qr/47XZT5K4I7LQP1" class="cta">Get Free Audit</a>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>Crafting <span>Digital Growth</span> Engines</h1>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+  <div class="hero-left">
+    <h1>
+      Crafting <span>Digital</span><br>
+      Growth Engines
+    </h1>
 
     <p>
-      We build <b class="highlight">scalable brand systems</b> that combine design,
+      We build <mark>scalable brand systems</mark> that combine design,
       performance and strategy.
     </p>
 
-    <div class="hero-btns">
-      <a href="#work" class="btn">View Work</a>
-      <a href="https://api.whatsapp.com/qr/47XZT5K4I7LQP1" class="btn-outline">Start a Project</a>
+    <div class="hero-buttons">
+      <a href="#work" class="btn-primary">View Work</a>
+      <a href="https://api.whatsapp.com/send?phone=917058872245" class="btn-outline">Start a Project</a>
     </div>
   </div>
 
-  <div class="hero-img">
+  <div class="hero-right">
     <img src="assets/hero-visual.png">
   </div>
+
 </section>
 
-<!-- FOUNDER -->
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+
+  <h2>Core Services</h2>
+
+  <div class="service-grid">
+
+    <a class="card">Branding</a>
+    <a class="card">Performance Marketing</a>
+    <a class="card">Social Media Growth</a>
+    <a class="card">Meta Ads</a>
+    <a class="card">Graphics Design</a>
+    <a class="card">Web Development</a>
+
+  </div>
+
+</section>
+
+<!-- ================= FOUNDER ================= -->
 <section class="founder" id="about">
 
   <img src="assets/founder.jpg">
 
-  <div>
+  <div class="founder-content">
+
     <h2>Parth Desai</h2>
     <h4>Founder & Creative Director • 21</h4>
 
     <p>
       At just 21, Parth has been building high-impact digital brands since 2021.
-      A graphics designer and a BSc CS student, he blends <span class="highlight">creativity with technology</span>
-      to create performance-driven digital systems.
+      A <mark>graphics designer</mark> and BSc CS student, he blends creativity
+      with technology to build <mark>scalable growth engines</mark>.
     </p>
 
-    <a href="https://api.whatsapp.com/qr/47XZT5K4I7LQP1" class="btn">Start a Conversation</a>
+    <a href="https://api.whatsapp.com/send?phone=917058872245" class="btn-primary">
+      Start a Conversation
+    </a>
+
   </div>
 
 </section>
 
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+
+  <h2>Let’s Build Something Powerful</h2>
+
+  <div class="contact-links">
+
+    <a href="https://www.instagram.com/nexoracreatives">Instagram</a>
+    <a href="https://api.whatsapp.com/qr/47XZT5K4I7LQP1">WhatsApp</a>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
