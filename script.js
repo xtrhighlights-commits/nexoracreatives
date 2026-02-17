@@ -1,8 +1,8 @@
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
 
-reveals.forEach(el => {
+reveals.forEach(el=>{
 
 const top = el.getBoundingClientRect().top;
 const windowHeight = window.innerHeight;
