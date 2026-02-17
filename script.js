@@ -1,19 +1,16 @@
-function filter(category){
+const reveals = document.querySelectorAll(".reveal");
 
-let items=document.querySelectorAll(".grid img");
+window.addEventListener("scroll", () => {
 
-items.forEach(item=>{
+reveals.forEach(el => {
 
-if(category==="all"){
-item.style.display="block";
-}
-else if(item.classList.contains(category)){
-item.style.display="block";
-}
-else{
-item.style.display="none";
+const top = el.getBoundingClientRect().top;
+const windowHeight = window.innerHeight;
+
+if(top < windowHeight - 100){
+el.classList.add("active");
 }
 
-})
+});
 
-}
+});
