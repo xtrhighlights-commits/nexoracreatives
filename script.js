@@ -1,7 +1,7 @@
-const current = location.pathname.split("/").pop();
+// smooth load animation
+document.body.style.opacity = 0;
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
-if(link.getAttribute("href")===current){
-link.classList.add("active");
-}
+window.addEventListener("load",()=>{
+  document.body.style.transition="1s";
+  document.body.style.opacity=1;
 });
