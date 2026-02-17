@@ -1,215 +1,137 @@
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
 body{
-font-family:'Poppins',sans-serif;
-background:#000;
-color:#fff;
+  font-family:Poppins;
+  background:linear-gradient(135deg,#000,#140021);
+  color:white;
 }
 
-/* HEADER */
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-background:#000;
-position:sticky;
-top:0;
-z-index:999;
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
 }
 
-/* LOGO 3X */
 .logo{
-display:flex;
-align-items:center;
-gap:14px;
+  display:flex;
+  align-items:center;
+  gap:15px;
 }
 
 .logo img{
-height:72px;
+  height:70px;   /* 3X LOGO */
 }
 
 .logo span{
-font-size:22px;
-font-weight:600;
-}
-
-nav{
-display:flex;
-gap:28px;
+  font-weight:700;
 }
 
 nav a{
-color:#aaa;
-text-decoration:none;
+  margin:0 15px;
+  text-decoration:none;
+  color:#aaa;
 }
 
-nav a.active,
-nav a:hover{
-color:#a855f7;
-font-weight:600;
+nav .active{
+  color:#9b5cff;
+  font-weight:600;
 }
 
-.nav-btn{
-padding:14px 26px;
-background:linear-gradient(45deg,#7c3aed,#a855f7);
-border-radius:12px;
-text-decoration:none;
-color:#fff;
+.cta{
+  background:linear-gradient(45deg,#9b5cff,#6e00ff);
+  padding:12px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
 }
 
 /* HERO */
 .hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-padding:120px 8%;
-align-items:center;
-background:radial-gradient(circle,#1a0129,black);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:80px 8%;
 }
 
-.hero h1{
-font-size:64px;
-line-height:1.1;
+.hero-text h1{
+  font-size:60px;
 }
 
-.gradient{
-background:linear-gradient(45deg,#7c3aed,#a855f7);
--webkit-background-clip:text;
-color:transparent;
+.hero-text span{
+  color:#9b5cff;
 }
 
 .highlight{
-background:#a855f7;
-padding:4px 10px;
-border-radius:6px;
+  background:#9b5cff;
+  padding:4px 10px;
+  border-radius:6px;
 }
 
-.hero-img{
-max-width:420px;
-margin-left:auto;
+.hero-img img{
+  width:100%;
+  max-width:420px;
+  display:block;
+  margin:auto;
 }
 
-.hero-btns{
-margin-top:30px;
-display:flex;
-gap:15px;
-}
-
+/* BUTTONS */
 .btn{
-background:linear-gradient(45deg,#7c3aed,#a855f7);
-padding:16px 30px;
-border-radius:12px;
-text-decoration:none;
-color:white;
+  background:#9b5cff;
+  padding:14px 30px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  display:inline-block;
+  margin-top:20px;
 }
 
 .btn-outline{
-border:1px solid #a855f7;
-padding:16px 30px;
-border-radius:12px;
-text-decoration:none;
-color:white;
-}
-
-/* SECTIONS */
-section{
-padding:120px 8%;
-}
-
-.services,.contact{
-background:radial-gradient(circle,#14021f,black);
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:50px;
-}
-
-.card{
-background:#0c0c0c;
-padding:30px;
-border-radius:16px;
-text-decoration:none;
-color:white;
-transition:.35s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-border:1px solid #a855f7;
-}
-
-.work img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:16px;
+  border:2px solid #9b5cff;
+  padding:14px 30px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
 }
 
 /* FOUNDER */
 .founder{
-display:grid;
-grid-template-columns:320px 1fr;
-gap:70px;
-align-items:center;
+  display:grid;
+  grid-template-columns:350px 1fr;
+  gap:60px;
+  padding:100px 8%;
 }
 
 .founder img{
-width:100%;
-height:380px;
-object-fit:cover;
-border-radius:20px;
+  width:100%;
+  border-radius:20px;
 }
 
-.contact-box{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.contact-box a{
-background:#0c0c0c;
-padding:18px 30px;
-border-radius:12px;
-text-decoration:none;
-color:white;
+.founder h2{
+  font-size:40px;
 }
 
 /* MOBILE */
-@media(max-width:768px){
-
-nav{display:none;}
-
-.logo img{height:54px;}
+@media(max-width:900px){
 
 .hero{
-grid-template-columns:1fr;
-text-align:center;
+  grid-template-columns:1fr;
+  text-align:center;
 }
 
-.hero h1{font-size:38px;}
-
-.hero-img{
-margin:auto;
-margin-top:40px;
-}
-
-.hero-btns{
-flex-direction:column;
-align-items:center;
+.hero-img img{
+  max-width:280px;
+  margin-top:40px;
 }
 
 .founder{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-.founder img{
-width:240px;
-height:280px;
-margin:auto;
+  grid-template-columns:1fr;
+  text-align:center;
 }
 
 }
