@@ -1,36 +1,45 @@
-*{box-sizing:border-box;margin:0;padding:0}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
 font-family:'Poppins',sans-serif;
-background:black;
-color:white;
+background:#000;
+color:#fff;
 }
 
-/* NAVBAR */
+/* HEADER */
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
+padding:18px 8%;
 background:#000;
 position:sticky;
 top:0;
-z-index:1000;
+z-index:999;
 }
 
+/* LOGO 3X */
 .logo{
 display:flex;
 align-items:center;
-gap:12px;
-font-weight:600;
+gap:14px;
 }
 
 .logo img{
-height:44px;
+height:72px;
+}
+
+.logo span{
+font-size:22px;
+font-weight:600;
+}
+
+nav{
+display:flex;
+gap:28px;
 }
 
 nav a{
-margin:0 18px;
 color:#aaa;
 text-decoration:none;
 }
@@ -42,11 +51,11 @@ font-weight:600;
 }
 
 .nav-btn{
+padding:14px 26px;
 background:linear-gradient(45deg,#7c3aed,#a855f7);
-padding:12px 22px;
-border-radius:10px;
-color:white;
+border-radius:12px;
 text-decoration:none;
+color:#fff;
 }
 
 /* HERO */
@@ -55,12 +64,7 @@ display:grid;
 grid-template-columns:1fr 1fr;
 padding:120px 8%;
 align-items:center;
-background:radial-gradient(circle at top,#1a0129,black);
-}
-
-.hero-img{
-max-width:420px;
-margin-left:auto;
+background:radial-gradient(circle,#1a0129,black);
 }
 
 .hero h1{
@@ -68,7 +72,7 @@ font-size:64px;
 line-height:1.1;
 }
 
-.gradient-text{
+.gradient{
 background:linear-gradient(45deg,#7c3aed,#a855f7);
 -webkit-background-clip:text;
 color:transparent;
@@ -80,22 +84,31 @@ padding:4px 10px;
 border-radius:6px;
 }
 
-/* BUTTONS */
+.hero-img{
+max-width:420px;
+margin-left:auto;
+}
+
+.hero-btns{
+margin-top:30px;
+display:flex;
+gap:15px;
+}
+
 .btn{
 background:linear-gradient(45deg,#7c3aed,#a855f7);
 padding:16px 30px;
 border-radius:12px;
-color:white;
 text-decoration:none;
+color:white;
 }
 
 .btn-outline{
 border:1px solid #a855f7;
 padding:16px 30px;
 border-radius:12px;
-color:white;
 text-decoration:none;
-margin-left:10px;
+color:white;
 }
 
 /* SECTIONS */
@@ -103,8 +116,7 @@ section{
 padding:120px 8%;
 }
 
-.services,
-.contact{
+.services,.contact{
 background:radial-gradient(circle,#14021f,black);
 }
 
@@ -168,11 +180,36 @@ color:white;
 /* MOBILE */
 @media(max-width:768px){
 
-.hero{grid-template-columns:1fr;text-align:center}
-.hero-img{margin:auto}
+nav{display:none;}
 
-.founder{grid-template-columns:1fr;text-align:center}
+.logo img{height:54px;}
 
-.hero h1{font-size:38px}
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{font-size:38px;}
+
+.hero-img{
+margin:auto;
+margin-top:40px;
+}
+
+.hero-btns{
+flex-direction:column;
+align-items:center;
+}
+
+.founder{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.founder img{
+width:240px;
+height:280px;
+margin:auto;
+}
 
 }
