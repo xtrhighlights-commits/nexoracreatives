@@ -1,9 +1,0 @@
-
-{
-  "name": "Nexora Creatives Agency",
-  "description": "A premium digital agency platform featuring high-impact branding, web development, SEO, and social media marketing solutions.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
-}
